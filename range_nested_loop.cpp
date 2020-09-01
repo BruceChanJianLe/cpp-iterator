@@ -8,9 +8,9 @@ int main(int argc, char ** argv)
 
     std::vector<std::vector<double>> ages_container {ages, ages, ages};
 
-    for(auto age_container : ages_container)
+    for(auto & age_container : ages_container)
     {
-        for(auto age : age_container)
+        for(auto & age : age_container)
         {
             std::cout << age << "\t";
         }
